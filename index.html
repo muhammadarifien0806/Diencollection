@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dien Collection</title>
+  <style>
+    /* Reset dasar */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    /* Navigasi Atas */
+    .nav-bar {
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-item {
+      text-decoration: none;
+      color: #4CAF50;
+      text-align: center;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .nav-item img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-item:hover {
+      color: #45a049;
+    }
+
+    .nav-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Kontainer dan Kategori */
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .category {
+      text-align: center;
+      flex: 1;
+    }
+
+    .category img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Produk */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h4, .product p {
+      margin: 5px 0;
+    }
+
+    /* Tombol Aksi */
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cta button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #45a049;
+    }
+
+    /* Media Queries untuk responsivitas */
+    @media (max-width: 768px) {
+      .categories {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .category {
+        margin-bottom: 15px;
+      }
+
+      .nav-item {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header {
+        font-size: 18px;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <h1>Selamat Datang di "Dien Collection"</h1>
+  </div>
+
+  <!-- Navigasi Atas -->
+  <div class="nav-bar">
+    <a href="#" class="nav-item">
+      <img src="c:\Users\Muhammad Arifin\Pictures\download.png" alt="Beranda">
+      <p>Beranda</p>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="c:\Users\Muhammad Arifin\Pictures\download (2).png" alt="Pencarian">
+      <p>Pencarian</p>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="c:\Users\Muhammad Arifin\Pictures\download (1).png" alt="Keranjang">
+      <p>Keranjang</p>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="c:\Users\Muhammad Arifin\Pictures\download (4).png" alt="Transaksi">
+      <p>Transaksi</p>
+    </a>
+    <a href="#" class="nav-item">
+      <img src="c:\Users\Muhammad Arifin\Pictures\download (3).png" alt="Profil">
+      <p>Profil</p>
+    </a>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <!-- Kategori Produk -->
+    <div class="categories">
+      <div class="category">
+        <img src="c:\Users\Muhammad Arifin\Pictures\597d8f4dfb523164098e6f7bcfd6a4f8.jpg" alt="Pria">
+        <p>Pria</p>
+      </div>
+      <div class="category">
+        <img src="c:\Users\Muhammad Arifin\Pictures\fcb2b28fb4982323f87a00d472c652f6.jpg" alt="Wanita">
+        <p>Wanita</p>
+      </div>
+      <div class="category">
+        <img src="c:\Users\Muhammad Arifin\Pictures\98b5cc0f83189a808edd5f53898add6e.jpg" alt="Anak-Anak">
+        <p>Anak-Anak</p>
+      </div>
+    </div>
+
+    <!-- Produk Terlaris -->
+    <h2>Produk Terlaris</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/115/MTA-156584968/brd-89702_baju-muslim-duha-muslimwear-barq-short-sleeve-olive_full01-1c256764.jpg" alt="Produk 1">
+        <h4>Produk 1</h4>
+        <p>Rp 210.000</p>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Muhammad Arifin\Pictures\images.jpeg" alt="Produk 2">
+        <h4>Produk 2</h4>
+        <p>Rp 210.000</p>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Muhammad Arifin\Pictures\id-11134201-7r98r-lt62oza5v9tr11@resize_w450_nl.webp" alt="Produk 3">
+        <h4>Produk 3</h4>
+        <p>Rp 210.000</p>
+      </div>
+    </div>
+
+    <!-- Tombol Aksi -->
+    <div class="cta">
+      <button>Shop Now</button>
+    </div>
+  </div>
+</body>
+</html>
